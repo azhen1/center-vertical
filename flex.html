@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>水平垂直居中--1</title>
+    <style>
+        /* 公共样式--start */
+        *{
+            box-sizing:border-box;
+        }
+        body{
+            padding:50px;
+        }
+        .main{  /* main是父元素的类名 */
+            width:400px;
+            height:400px;
+            border:1px solid red;
+        }
+        .box{   /* box是子元素的类名 */
+            background:green;
+            color:#fff;
+            font-size:16px;
+            padding:10px;
+        }
+        .size{  /* size用来表示指定宽度 */
+            width:100px;
+            height:100px;
+        }
+        /* 公共样式--end */
+        /* 第六种：flex */
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box6{
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box box6">box6 box6 box6</div>
+    </div>
+</body>
+</html>
